@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação NIF</title>
+    <script src="js/nif_validar.js"></script>
+    <style>
+        .input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>VALIDAÇÃO NÚMERO DE CONTRIBUINTE</h1>
+    <form action="#">
+        <div class="input">
+            <label for="nif">Introduza o número de contribuinte:</label>
+            <input type='text' name='nif' value='' size='15px' id='nif' onkeyup='validaContribuinte();'>
+            <img id="errado" src="images/thumbs_down_red.png" width="30px" height="30px">
+        </div>  
+            <input type="image" name="validar" title="AVANÇAR" src="images/square_direita.png" width="60px" height="60px" value="registration" id="validar" disabled />
+    </form>
+
+</body>
+</html>
